@@ -1,0 +1,781 @@
+@import url(./font.css);
+body {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    font-family: Raleway-thin;
+}
+.booki-and-nav {
+    padding-left: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.heading__citation {
+    margin-left: 3%;
+}
+
+.heading__logo {
+    width: 8vw;
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-bottom: 4%;
+}
+.heading__citation h1 {
+    font-family: Raleway-semiBold;
+    font-size: 150%;
+    margin-bottom: 0px;
+}
+.heading__citation h3 {    
+    margin-top: 2px;
+    font-size: 100%;
+}
+nav ul {
+    width: 100%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+}
+nav {
+    font-family: Raleway-regular;
+    margin-right: 3vw;
+}
+nav ul li {
+    margin-left: 2vw;
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    padding-top: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: black;
+}
+nav a:hover {
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
+
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .heading__citation h1 {
+        font-size: 200%;
+        width: 80vw;
+    }
+    .heading__citation h3 {
+        font-size: 140%;
+        font-family: Raleway-medium;
+    }
+    nav ul {
+        font-size: 150%;
+    }
+}
+@media screen and (max-width: 767px) {
+    
+    .heading__logo {
+        width: 20%;
+        margin: auto;
+    }
+    nav {
+        margin: 0px;
+        margin-top: 2%;
+        width: 100%;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    nav ul li {
+        padding: 8%;
+        padding-bottom: 4%;
+        font-size: 190%;
+        margin: 0px;
+    }
+    nav ul li:hover {
+        border-bottom: 3px #0065FC solid;
+    }
+    nav a {
+        color: black;
+        font-family: Raleway-medium;
+    }
+    .heading__citation {
+        width: 80%;
+        padding-left: 3%;
+    }
+    .heading__citation h1 {
+        font-family: Raleway-bold;
+        font-size: 270%;
+
+    }
+    .heading__citation h3 {
+        font-family: Raleway-medium;
+        font-size: 200%;
+    }
+    header {
+        padding: 0px;
+        margin-left: 0px;
+        width: 100%;
+        min-width: 100%;
+    }
+    .booki-and-nav {
+        padding: 0px;
+        margin: 0%;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}  
+.searche {
+    margin-top: 1%;
+    padding-left: 5%;
+}
+.searche_bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.7%;
+}
+.fa-solid.fa-location-dot {
+    font-size: 20px;
+}
+.searche__form {
+    display: flex;
+    margin-bottom: 0px;
+}
+.searche__form__input {
+    font-family: Raleway-semiBold;
+   border: 0px black solid;
+   border-bottom: 1px hsla(0, 0%, 0%, 0.253) solid;
+   padding-left: 17px;
+   font-size: 17px;
+}
+.searche__form__button {
+    cursor: pointer;
+    font-family: Raleway-semiBold;
+    display: inline;
+    font-size: 18px;
+    color: white;
+    padding: 5%;
+    border: 0px #0065FC none ;
+    border-radius: 0px 13px 13px 0px;
+    background-color: #0065FC;
+}
+.searche__lcationButton {
+    cursor: pointer;
+    display: inline;
+    padding: 2%;
+    border: 0px black solid;
+    border-radius: 12px 0px 0px 12px;
+}
+.fas.fa-search {
+    display: none;
+}
+ @media screen and (max-width: 992px) {
+    .fa-solid.fa-location-dot {
+        font-size: 190%;
+    }
+    .searche__form__input {
+        width: 100%;
+        padding: 0%;
+        padding-right: 2%;
+        font-size: 210%;
+        font-family: Raleway-semiBold;
+    }
+    .searche__form {
+        width: 100%;
+    }
+     .searche__form__button {
+         font-size: 190%;
+         margin-right: 1%;
+         border-radius: 13px;
+     }
+     .searche {
+         width: 100%;
+         margin: 0%;
+         padding: 0px;
+     }
+     .searche_bar {
+         width: 90%;
+         margin-left: 8%;
+         padding-left: 0%;
+         padding-right: 0px;
+     }
+    .rechercher {
+        display: none;
+    }
+    .fas.fa-search {
+        font-size: 150%;
+        display: inline;
+    }
+  
+ }
+.searche_filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2%;
+}
+.searche-filter__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+}
+.searche .searche-filter__heading {
+    font-family: Raleway-semiBold;
+    margin: 0px;
+    margin-right: 2%;
+}
+.searcher-filter__button {
+    min-width: max-content;
+    margin-bottom: 7px;
+    cursor: pointer;
+    margin-right: 3%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px rgba(0, 0, 0, 0.144) solid;
+    border-radius: 50px;
+   padding: 0px;
+   padding-right: 4%;
+    /* display: block; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 100%;
+    white-space: nowrap;
+}
+.searcher-filter__button span {
+    font-family: Raleway-bold;
+}
+.searche-filter__buttons .searcher-filter__button:hover {
+    background-color: #0065FC;
+    color: white;
+}
+.searcher-filter__button i {
+    margin-right: 10%;
+    transform: scale(1.1);
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 17px;
+    border-radius: 40px 40px 40px 40px;
+}
+.fa-solid.fa-location-dot {
+    padding-right: 15px;
+}
+.searche p i {
+    color: #0065FC;
+    font-size: 100%;
+}
+.searche p {
+    font-family: Raleway-thin;
+}
+@media screen and (max-width: 992px) {
+    .searche p {
+        display: flex;
+        margin-left: 3%;
+        font-family: Raleway-medium;
+        width: 70%;
+        font-size: 150%;
+    }
+    .searche p i {
+        margin-right: 1%;
+    }
+      .searcher-filter__button {
+       font-size: 200%;
+       margin-right: 7%;
+    }
+    .searche-filter__buttons {
+        flex-wrap: wrap;
+    }
+    .searche .searche-filter__heading {
+        font-size: 27px;
+        margin: 0%;
+    }
+    .searche_filter {
+        margin: 0%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3%;
+    }
+}
+.accommodation__results__marseille {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+
+}
+.accommodation__results__marseille a {
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+.accommodation__results__marseille a span {
+    margin-top: 7px;
+    font-size: 13px;
+}
+.accommodation__results__marseille a h3 {
+    margin-bottom: 0px;
+    font-family: Raleway-bold;
+}
+.card {
+    width: 28%;
+    margin: 1%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+}
+.bg {
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    height: 130px;
+}
+.accommodation__results {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+   margin: 2%;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-left: 3%;
+}
+.accommodation__results h2 {
+    margin-bottom: 30px;
+}
+.accommodation__mores {
+    color: black;
+    text-decoration: none;
+    font-size: 110%;
+    font-family: Raleway-medium;
+}
+.accommodation {
+    margin-top: 2%;
+    display: flex;
+}
+@media screen and (min-width: 993px) {
+    .auberge-la-cannebiere {
+        background-image: url("../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+    .hotel-du-port {
+        background-image: url("../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+    .hotel-les-mouettes {
+        background-image: url("../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+    .hotel-de-la-mer {
+        background-image: url("../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+    .auberge-le-panier {
+        background-image: url("../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+    .hotel-chez-amina {
+        background-image: url("../images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .auberge-la-cannebiere {
+        background-image: url("../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+    .hotel-du-port {
+        background-image: url("../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+    .hotel-les-mouettes {
+        background-image: url("../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+    .hotel-de-la-mer {
+        background-image: url("../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+    .auberge-le-panier {
+        background-image: url("../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+    .hotel-chez-amina {
+        background-image: url("../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+}
+ @media screen and (max-width: 767px) {
+    .auberge-la-cannebiere {
+        background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+    .hotel-du-port {
+        background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+    .hotel-les-mouettes {
+        background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+    .hotel-de-la-mer {
+        background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+    .auberge-le-panier {
+        background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+    .hotel-chez-amina {
+        background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+}
+@media screen and (max-width: 992px) {
+    .accommodation {
+        padding-right: 0px;
+        margin: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;  
+      }
+      .card {
+          width: 96%;
+          margin: 0%;
+      }
+    .bg {
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px 30px 0px 0px;
+        height: 270px;
+    }
+    .accommodation__results__marseille a em {
+        font-size: 150%;
+    }
+    .accommodation__results {
+        width: 96%;
+        padding: 0%;
+        padding-left: 3%;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    .accommodation__results__marseille a span {
+        font-size: 23px;
+    }
+    .accommodation__results__marseille a h3 {
+        font-size: 27px;
+        font-family: Raleway-bold;
+    }
+    .accommodation__results__marseille {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .accommodation__mores {
+        font-size: 150%;
+    }
+
+}
+.accommodation__popular {
+    width: 48%;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    padding: 1%;
+    padding-top: 1%;
+    margin-right: 2%;
+    margin-left: 0px;
+}
+.accommodation__popular__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accommodation__popular__head i {
+    font-size: 25px;
+    cursor: pointer;
+}
+.accommmodation__popular__marseille {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popular-card {
+    margin-bottom: 5%;
+     padding: 7px;
+    padding-right: 0px;
+    background-color: white;
+    border-radius: 25px;
+}
+.popular-card a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+.popular-card__info {
+    font-size: 80%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.popular-card__info h3 {
+    font-weight: normal;
+    font-family: Raleway-bold;
+    display: inline;
+    margin-bottom: 0px;
+}
+.bg-popular {
+    width: 35%;
+    height: 135px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px 0px 0px 25px;
+}
+em {
+    font-style: normal;
+    font-family: Raleway-light;
+}
+section h2 {
+    font-family: Raleway-semiBold;
+    font-size: 120%;
+}
+.more {
+    margin: 60px 30px 30px 40px;
+}
+@media screen and (min-width: 993px) {
+    .hotel-le-soleil-du-matin {
+        background-image: url("../images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+    .au-coeur-de-eau {
+        background-image: url("../images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    }
+    .hotel-tout-bleu-et-blanc {
+        background-image: url("../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .hotel-le-soleil-du-matin {
+        background-image: url("../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+    .au-coeur-de-eau {
+        background-image: url("../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    }
+    .hotel-tout-bleu-et-blanc {
+        background-image: url("../images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    }
+}
+@media screen and (max-width: 767px) {
+    .hotel-le-soleil-du-matin {
+        background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+    .au-coeur-de-eau {
+        background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    }
+    .hotel-tout-bleu-et-blanc {
+        background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    }
+}
+@media screen and (max-width: 992px) {
+    .popular-card {
+        width: 70%;
+        margin-bottom: 3%;
+        margin-left: 0%;
+    }
+    section h2 {
+        font-size: 170%;
+        font-family: Raleway-bold;
+    }
+      em {
+        font-style: normal;
+        font-family: Raleway-medium;
+    }
+    .popular-card__info {
+        font-size: 140%;
+    }
+    .popular-card__info span {
+        font-size: 80%;
+    }
+    .popular-card__info h3 {
+        font-size: 100%;
+    }
+    .accommodation__popular {
+        width: 96%;
+        padding: 0px;
+        padding-left: 3%;
+        margin: 0px;
+    }
+
+}
+.activities {
+    padding: 35px;
+    padding-right: 0%;
+}
+.activities h2 {
+    margin-bottom: 2%;
+    padding-left: 2.7%;
+}
+.activities__cards {
+    display: flex;
+}
+.background {
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    height: 350px;
+}
+.block-activitie-card .background {
+    height: 125px;
+}
+.activitie-card {
+    width: 21vw;
+    padding: 10px;
+    margin-left: 1%;
+    background-color: white;
+}
+.activitie-card a {
+   text-decoration: none;
+   color: black;
+   font-family: Raleway-medium;
+   font-size: 10px;
+}
+.block-activitie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (min-width: 993px) {
+    .calanque {
+        background-image: url("../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    }
+    .vieux-port {
+        background-image: url("../images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    }
+    .fort-de-pomegues {
+        background-image: url("../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    }
+    .iles-du-frioul {
+        background-image: url("../images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    }
+    .notre-dame {
+        background-image: url("../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    }
+    .parclongchamp {
+        background-image: url("../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .calanque {
+        background-image: url("../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    }
+    .vieux-port {
+        background-image: url("../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    }
+    .fort-de-pomegues {
+        background-image: url("../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    }
+    .iles-du-frioul {
+        background-image: url("../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    }
+    .notre-dame {
+        background-image: url("../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    }
+    .parclongchamp {
+        background-image: url("../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    }
+}
+@media screen and (max-width: 767px) {
+    .calanque {
+        background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    }
+    .vieux-port {
+        background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    }
+    .fort-de-pomegues {
+        background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    }
+    .iles-du-frioul {
+        background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    }
+    .notre-dame {
+        background-image: url("../images/activites/4_small                  /florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    }
+    .parclongchamp {
+        background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    }
+}
+@media screen and (max-width: 992px) {
+    .activitie-card {
+        width: 96%;
+    }
+    .background {
+        height: 180px;
+    }
+    .block-activitie-card .background {
+        height: 180px;
+    }
+    .activitie-card a {
+        font-family: Raleway-bold;
+        font-size: 25px;
+    }
+    .activities {
+        width: 96%;
+        margin: 0%;
+        padding: 1%;
+    }
+    .activities__cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-bottom: 3%;
+    padding-right: 20%;
+    background-color: #F2F2F2;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer div h2 {
+    font-family: Raleway-bold;
+    font-size: 18px;
+}
+footer a {
+    text-decoration: none;
+    font-family: Raleway-light;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        padding: 5%;
+    }
+    footer div h2 {
+        font-size: 24px;
+    }
+    footer div {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    footer div a {
+        margin-bottom: 1%;
+        font-family: Raleway-medium;
+        font-size: 22px;
+        color: black;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    footer {
+        padding: 3%;
+    }
+    footer a {
+        font-family: Raleway-medium;
+        font-size: 160%;
+    }
+    footer div h2 {
+        font-size: 180%;
+    }
+}
