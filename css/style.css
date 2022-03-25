@@ -633,7 +633,7 @@ section h2 {
    text-decoration: none;
    color: black;
    font-family: Raleway-medium;
-   font-size: 10px;
+   font-size: 13px;
 }
 .block-activitie-card {
     display: flex;
@@ -694,7 +694,7 @@ section h2 {
         background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     }
     .notre-dame {
-        background-image: url("../images/activites/4_small                  /florian-wehde-xW9e8gdotxI-unsplash.jpg");
+        background-image: url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     }
     .parclongchamp {
         background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
@@ -728,7 +728,7 @@ section h2 {
 footer {
     display: flex;
     justify-content: space-between;
-    padding-left: 1%;
+    padding-left: 4%;
     padding-bottom: 3%;
     padding-right: 20%;
     background-color: #F2F2F2;
@@ -747,7 +747,7 @@ footer a {
     font-family: Raleway-light;
     color: black;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     footer {
         flex-direction: column;
         padding: 5%;
@@ -767,7 +767,7 @@ footer a {
         color: black;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     footer {
         padding: 3%;
     }
