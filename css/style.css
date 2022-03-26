@@ -4,6 +4,15 @@ body {
     margin: 0px;
     padding: 0px;
 }
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 header {
     display: flex;
     flex-direction: column;
@@ -82,7 +91,7 @@ nav a:hover {
     }
     nav {
         margin: 0px;
-        margin-top: 2%;
+        margin-top: 8%;
         width: 100%;
     }
     nav ul {
@@ -93,7 +102,7 @@ nav a:hover {
         
     }
     nav ul li {
-        padding: 8%;
+        padding: 1%;
         padding-bottom: 4%;
         font-size: 190%;
         margin: 0px;
@@ -102,8 +111,12 @@ nav a:hover {
         border-bottom: 3px #0065FC solid;
     }
     nav a {
+        padding-top: 0px;
         color: black;
         font-family: Raleway-medium;
+    }
+    nav a:hover {
+        border-top: 0px #0065FC none;
     }
     .heading__citation {
         width: 80%;
@@ -311,9 +324,7 @@ nav a:hover {
 .accommodation__results__marseille {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
-
 }
 .accommodation__results__marseille a {
     color: black;
@@ -352,6 +363,7 @@ nav a:hover {
    margin-left: 3%;
 }
 .accommodation__results h2 {
+    margin-left: 3%;
     margin-bottom: 30px;
 }
 .accommodation__mores {
