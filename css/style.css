@@ -548,14 +548,19 @@ nav a:hover {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
 .popular-card__info strong {
+    font-size: 17px;
     font-weight: normal;
     font-family: Raleway-bold;
     display: inline;
-    margin-bottom: 0px;
+    margin-bottom: 3%;
 }
 .bg-popular {
     width: 35%;
@@ -564,7 +569,8 @@ nav a:hover {
     background-size: cover;
     border-radius: 25px 0px 0px 25px;
 }
-em {
+ em {
+    font-size: 15px;
     font-style: normal;
     font-family: Raleway-light;
 }
