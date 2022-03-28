@@ -70,7 +70,7 @@ nav a:hover {
     color: #0065FC;
 
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .heading__citation h1 {
         font-size: 200%;
         width: 80vw;
@@ -87,7 +87,9 @@ nav a:hover {
     
     .heading__logo {
         width: 20%;
+        transform: scale(1.5);
         margin: auto;
+        padding-top: 3%;
     }
     nav {
         margin: 0px;
@@ -102,8 +104,9 @@ nav a:hover {
         
     }
     nav ul li {
-        padding: 1%;
         padding-bottom: 4%;
+        padding-left: 5%;
+        padding-right: 7%;
         font-size: 190%;
         margin: 0px;
     }
@@ -119,12 +122,14 @@ nav a:hover {
         border-top: 0px #0065FC none;
     }
     .heading__citation {
-        width: 80%;
+        max-width: 700px;
+        padding-right: 4%;
         padding-left: 3%;
     }
     .heading__citation h1 {
         font-family: Raleway-bold;
-        font-size: 270%;
+        font-size: 260%;
+        margin-bottom: 3%;
 
     }
     .heading__citation h3 {
@@ -198,6 +203,7 @@ nav a:hover {
         width: 100%;
         padding: 0%;
         padding-right: 2%;
+        padding-left: 3%;
         font-size: 210%;
         font-family: Raleway-semiBold;
     }
@@ -295,8 +301,7 @@ nav a:hover {
         display: flex;
         margin-left: 3%;
         font-family: Raleway-medium;
-        width: 70%;
-        font-size: 150%;
+        font-size: 200%;
     }
     .searche p i {
         margin-right: 1%;
@@ -361,6 +366,8 @@ nav a:hover {
    margin-top: 0px;
    margin-bottom: 0px;
    margin-left: 3%;
+   padding-left: 2%;
+   padding-right: 2%;
 }
 .accommodation__results h2 {
     margin-left: 3%;
@@ -585,8 +592,11 @@ section h2 {
     }
 }
 @media screen and (max-width: 992px) {
+    .bg-popular {
+        height: 180px;
+    }
     .popular-card {
-        width: 70%;
+        width: 85vw;
         margin-bottom: 3%;
         margin-left: 0%;
     }
@@ -594,18 +604,27 @@ section h2 {
         font-size: 170%;
         font-family: Raleway-bold;
     }
-      em {
+      .popular-card__info em {
         font-style: normal;
         font-family: Raleway-medium;
+        font-size: 125%;
+        white-space: nowrap;
     }
     .popular-card__info {
+        justify-content: space-around;
         font-size: 140%;
+    }
+    .info-container {
+        display: flex;
+        flex-direction: column;
     }
     .popular-card__info span {
         font-size: 80%;
     }
     .popular-card__info h3 {
-        font-size: 100%;
+        margin: 0px;
+        margin-bottom: 1%;
+        font-size: 130%;
     }
     .accommodation__popular {
         width: 96%;
