@@ -71,12 +71,18 @@ nav a:hover {
 
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .heading__logo {
+        width: 15vw;
+    }
+    .heading__citation {
+        font-size: 100vw;
+    }
     .heading__citation h1 {
-        font-size: 200%;
+        font-size: 4%;
         width: 80vw;
     }
     .heading__citation h3 {
-        font-size: 140%;
+        font-size: 3%;
         font-family: Raleway-medium;
     }
     nav ul {
@@ -452,14 +458,15 @@ nav a:hover {
 @media screen and (max-width: 992px) {
     .accommodation {
         padding-right: 0px;
-        margin: 0%;
+        margin: auto;
         width: 100%;
         display: flex;
         flex-direction: column-reverse;  
       }
       .card {
-          width: 90vw;
-          margin: 0%;
+          width: 86vw;
+          margin-top: 1%;
+          margin-left: 0%;
       }
     .bg {
         background-position: center;
@@ -474,7 +481,8 @@ nav a:hover {
         font-size: 100vw;
         width: 96%;
         padding: 0%;
-        padding-left: 3%;
+        padding-left: 0%;
+        padding: 2%;
         margin: 0%;
         display: flex;
         flex-direction: column;
