@@ -90,6 +90,10 @@ nav a:hover {
     }
 }
 @media screen and (max-width: 767px) {
+    .container {
+        margin: 0px;
+        padding: 0px;
+    }
     
     .heading__logo {
         width: 20%;
