@@ -4,6 +4,10 @@ body {
     margin: 0px;
     padding: 0px;
 }
+main {
+    margin: 0%;
+    padding: 0%;
+}
 .container {
     box-sizing: border-box;
     width: 100%;
@@ -78,11 +82,11 @@ nav a:hover {
         font-size: 100vw;
     }
     .heading__citation h1 {
-        font-size: 4%;
+        font-size: 5%;
         width: 80vw;
     }
     .heading__citation h3 {
-        font-size: 3%;
+        font-size: 4%;
         font-family: Raleway-medium;
     }
     nav ul {
@@ -823,7 +827,7 @@ footer a {
     justify-content: space-between;
     flex-direction: row;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     footer {
         flex-direction: column;
         padding: 5%;
@@ -845,18 +849,6 @@ footer a {
     .footer {
         display: flex;
         flex-direction: column;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    footer {
-        padding: 3%;
-    }
-    footer a {
-        font-family: Raleway-medium;
-        font-size: 160%;
-    }
-    footer div h2 {
-        font-size: 180%;
     }
 }
 
