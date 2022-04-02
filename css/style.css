@@ -74,6 +74,7 @@ nav a:hover {
     color: #0065FC;
 
 }
+/* tablet media querie breakpoint */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .heading__logo {
         width: 15vw;
@@ -93,6 +94,7 @@ nav a:hover {
         font-size: 150%;
     }
 }
+/* mobil media querie breakpoint */
 @media screen and (max-width: 767px) {
     .container {
         margin: 0px;
@@ -209,8 +211,13 @@ nav a:hover {
     border-radius: 12px 0px 0px 12px;
 }
 .fas.fa-search {
-    display: none;
+    display: none; /* to hide searche icone on desktop mod  */
+
 }
+/* media query with "max-width: 992px" contains the same rules
+ for mobile and tablet version for the
+ same display on both media  
+ */
  @media screen and (max-width: 992px) {
     .fa-solid.fa-location-dot {
         font-size: 190%;
@@ -244,7 +251,7 @@ nav a:hover {
          padding-right: 0px;
      }
     .rechercher {
-        display: none;
+        display: none; /* to hide word "Rechercher" on mobil and tablet mode */
     }
     .fas.fa-search {
         font-size: 150%;
@@ -402,6 +409,7 @@ nav a:hover {
     margin-top: 2%;
     display: flex;
 }
+/* add image to the background according to the resolution */
 @media screen and (min-width: 993px) {
     .auberge-la-cannebiere {
         background-image: url("../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
