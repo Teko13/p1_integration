@@ -835,7 +835,7 @@ footer a {
     justify-content: space-between;
     flex-direction: row;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     footer {
         flex-direction: column;
         padding: 5%;
