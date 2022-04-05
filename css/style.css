@@ -236,6 +236,7 @@ nav a:hover {
         width: 100%;
     }
      .searche__form__button {
+         transform: translateX(-9%);
          padding: 3%;
          font-size: 6%;
          margin-right: 1%;
@@ -377,7 +378,7 @@ nav a:hover {
 .card {
     width: 28%;
     margin: 1%;
-    padding: 5px;
+    padding: .8%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.123);
@@ -489,7 +490,7 @@ nav a:hover {
       }
       .card {
           width: 95%;
-          margin-top: 2%;
+          margin-top: 3vw;
           margin-left: auto;
           margin-right: auto;
       }
@@ -503,6 +504,7 @@ nav a:hover {
         font-size: 4%;
     }
     .accommodation__results {
+        background-color: white;
         font-size: 100vw;
         width: 100%;
         padding: 0%;
@@ -795,6 +797,7 @@ section h2 {
 @media screen and (max-width: 992px) {
     .activitie-card {
         margin: 0%;
+        margin-bottom: 7%;
         width: 100%;
     }
     .background {
@@ -802,6 +805,7 @@ section h2 {
     }
     .block-activitie-card {
         margin-right: 0%;
+        margin-left: 0%;
         width: 100%;
     }
     .block-activitie-card .background {
@@ -809,11 +813,11 @@ section h2 {
     }
     .activitie-card a {
         font-family: Raleway-bold;
-        font-size: 4vw;
+        font-size: 3.7vw;
     }
     .activities {
-        width: 98vw;
-        padding: 2%;
+        width: 100%;
+        padding: 0% 2%;
         margin-left: 0px;
     }
     .activities h2 {
