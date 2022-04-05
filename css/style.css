@@ -381,7 +381,7 @@ nav a:hover {
     padding: .8%;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.123);
+    box-shadow: 0px 0px 1vw rgba(0, 0, 0, 0.123);
 }
 .bg {
     background-position: center;
@@ -490,7 +490,7 @@ nav a:hover {
       }
       .card {
           width: 95%;
-          margin-top: 3vw;
+          margin-top: 5%;
           margin-left: auto;
           margin-right: auto;
       }
@@ -708,7 +708,7 @@ section h2 {
     border-radius: 30px;
     background-color: white;
     width: 21vw;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.239);
+    box-shadow: 0px 0px 1vw rgba(0, 0, 0, 0.239);
 }
 .block-activitie-card .activitie-card {
     width: 100%;
