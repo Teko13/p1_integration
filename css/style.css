@@ -3,6 +3,7 @@ body {
     width: 100vw;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 main {
     margin: 0%;
@@ -126,6 +127,7 @@ nav a:hover {
         padding-left: 5%;
         padding-right: 5%;
         margin: 0px;
+        border-bottom: 3px #cfcdcd solid;
     }
     nav ul li:hover {
         border-bottom: 3px #0065FC solid;
