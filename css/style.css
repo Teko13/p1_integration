@@ -195,6 +195,9 @@ nav a:hover {
    padding-left: 17px;
    font-size: 17px;
 }
+.searche__form__input:focus {
+    outline: none;
+}
 .searche__form__button {
     cursor: pointer;
     font-family: Raleway-semiBold;
@@ -884,5 +887,6 @@ footer a {
         flex-direction: column;
     }
 }
+
 
 
