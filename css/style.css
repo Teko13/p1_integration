@@ -194,22 +194,6 @@ nav li a:hover {
 .search-section .search-results .result-text {
     font-weight: 100;
 }
-@media screen and (max-width: 992px) {
-    .search-section form .search-button .fas {
-        display: inline;
-    }
-    .search-section form .search-button .searche-word {
-        display: none;
-    }
-    .search-section form input {
-        border-color: red;
-        border-width: 1px 0;
-    }
-    .search-section form .search-button {
-        transform: translateX(-8px);
-        border-radius: 10px;
-    }
-}
 @media screen and (max-width: 767px) {
     .search-section {
         width: 95%;
@@ -243,6 +227,7 @@ nav li a:hover {
     }
     .search-section .filter .filter-items {
         margin-bottom: 3vw;
+        gap: 7vw;
     }
     .search-section .filter {
         flex-direction: column;
@@ -258,10 +243,11 @@ nav li a:hover {
     }
     .search-section .filter-items .item {
         gap: 8vw;
-        padding: 4vw;
+        padding: 2%;
+        margin-bottom: 7vw;
     }
     .search-section .filter-items .item .icon {
-        transform: scale(2.8);
+        transform: scale(2);
     }
     .search-section .search-results {
         align-items: flex-start;
@@ -355,10 +341,9 @@ i.color-gray {
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.356);
     border-radius: 15px;
     display: flex;
-    gap: 10px;
+    gap: 6%;
     background: white;
     padding: 7px;
-    align-items: flex-start;
 }
 .accommodation .popular-title {
     display: flex;
@@ -371,7 +356,7 @@ i.color-gray {
 .accommodation aside .cards .card .card-img {
     border-radius: 15px 0 0 15px;
     overflow: hidden;
-    width: 160px;
+    width: 80%;
 }
 .accommodation aside .cards .card .card-img img {
     aspect-ratio: 1 / 1;
@@ -384,12 +369,18 @@ i.color-gray {
     display: inline-block;
     margin-top: auto;
 }
+.accommodation aside .card-infos-head {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
 .accommodation aside .cards .card .card-infos {
     display: flex;
     flex-direction: column;
+    gap: 5%;
     padding-top: 17px;
     padding-bottom: 14px;
-    height: 100%;
+    width: 100%;
 }
 @media screen and (max-width: 992px) {
     .accommodation {
@@ -401,8 +392,14 @@ i.color-gray {
         margin-left: 0;
         margin-bottom: 2%;
     }
+    .accommodation aside .cards .card .card-img {
+        width: 40%;
+    }
 }
 @media screen and (max-width: 767px) {
+    .accommodation aside {
+        padding: 5%;
+    }
     .accommodation h2, .activities h2 {
         font-size: 6vw;
     }
@@ -416,9 +413,7 @@ i.color-gray {
     }
     .accommodation aside .cards .card .card-img {
         border-radius: 20px 0 0 20px;
-    }
-    .accommodation aside .cards .card .card-img {
-        width: 30vw;
+        width: 57vw;
     }
     .accommodation aside .cards .card .card-infos h4 {
         font-size: 5vw;
@@ -431,11 +426,17 @@ i.color-gray {
     .accommodation aside .cards .card .card-infos span i {
         font-size: 3vw;
     }
+    .accommodation aside .cards .card .card-img,
+    .accommodation aside .cards .card .card-img img {
+        height: 100%;
+    }
     .accommodation aside .cards .card {
         align-items: stretch;
     }
     .accommodation aside .cards .card .card-infos {
         height: initial;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .accommodation aside .cards .card .card-infos > span {
         margin-top: auto;
@@ -443,6 +444,7 @@ i.color-gray {
     .accommodation article {
         width: 100%;
         background: transparent;
+        padding: 5%;
     }
     .accommodation .main-accommodation .cards {
         flex-direction: column;
@@ -453,10 +455,8 @@ i.color-gray {
         width: 100%;
     }
     .accommodation .main-accommodation .cards .card .card-img {
-        height: 250px;
-    }
-    .accommodation .main-accommodation .cards .card .card-img img {
-        height: 250px;
+        height: 45vw;
+        overflow: hidden;
     }
     .accommodation .main-accommodation .cards .card .card-infos {
         margin: 2.5% 0;
@@ -533,7 +533,7 @@ i.color-gray {
 
 @media screen and (max-width: 767px) {
     .activities {
-        padding: 0 50px;
+        padding: 0 5%;
         gap: 10vw;
     }
     .activities .cards {
@@ -553,7 +553,7 @@ i.color-gray {
     }
     .activities .cards .big-card .card-img, .activities .cards .sm-card .card-img {
         overflow: hidden;
-        height: 250px;
+        height: 40vw;
     }
     .activities .cards .card h5 {
         font-size: 4vw;
