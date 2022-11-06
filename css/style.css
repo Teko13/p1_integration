@@ -88,7 +88,6 @@ nav li a:hover {
         border-top: none;
         border-bottom: 5px solid #cfcdcd;
         text-align: center;
-        padding: 0 auto;
         padding-top: 0;
         padding-bottom: 5%;
     }
@@ -120,6 +119,7 @@ nav li a:hover {
 }
 .search-section form input {
     padding-left: 1%;
+    padding-right: 3%;
     font-weight: 700;
     border-top: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
@@ -158,6 +158,7 @@ nav li a:hover {
     transition: all 500ms ease;
 }
 .search-section .filter-items .item .icon i {
+    display: block;
     color: #0065FC;
 }
 .search-section .filter-items .item .icon {
@@ -194,6 +195,9 @@ nav li a:hover {
 .search-section .search-results .result-text {
     font-weight: 100;
 }
+@media screen and (max-width: 992px) {
+    
+}
 @media screen and (max-width: 767px) {
     .search-section {
         width: 95%;
@@ -202,10 +206,13 @@ nav li a:hover {
     }
     .citation h2 {
         font-size: 7vw;
-        margin-bottom: 2%;
+        margin-bottom: 4%;
     }
     .citation h4 {
         font-size: 5vw;
+    }
+    .citation {
+        margin-bottom: 1%;
     }
     .search-section form input {
         width: 100%;
@@ -233,6 +240,19 @@ nav li a:hover {
         flex-direction: column;
         align-items: flex-start;
         gap: 10vw;
+    }
+    .search-section form .search-button .fas {
+        display: inline;
+    }
+    .search-section form .search-button .searche-word {
+        display: none;
+    }
+    .search-section form input {
+        border-width: 1px 0;
+    }
+    .search-section form .search-button {
+        transform: translateX(-8px);
+        border-radius: 10px;
     }
     .search-section .filter h3 {
         font-size: 4vw;
@@ -393,7 +413,7 @@ i.color-gray {
         margin-bottom: 2%;
     }
     .accommodation aside .cards .card .card-img {
-        width: 40%;
+        width: 30%;
     }
 }
 @media screen and (max-width: 767px) {
@@ -488,7 +508,6 @@ i.color-gray {
     width: 100%;
     height: 350px;
     display: flex;
-    flex-wrap: no-wrap;
 }
 .activities .cards .card {
     display: block;
